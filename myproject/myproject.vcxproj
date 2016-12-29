@@ -151,7 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="complex.h" />
+    <ClInclude Include="constructor.h" />
     <ClInclude Include="myhead.h" />
+    <ClInclude Include="Sales_item.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

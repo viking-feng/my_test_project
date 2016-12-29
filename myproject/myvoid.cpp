@@ -1,5 +1,4 @@
 
-
 #include<iostream>
 #include <iostream>
 #include<stdio.h>
@@ -17,10 +16,9 @@
 #include<stack>
 #include<set>
 #include"complex.h"
-#include"myhead.h"
+//#include"myhead.h"
 using namespace std;
 extern int n;
-
  void myswap( int &a , int &b){
     a=a+b;
     b=a-b;
@@ -258,4 +256,4 @@ int divide(int dividend, int divisor) { //±»³ýÊý ³ýÊý
         str="1"+str;
     return str;
 }
-
+ 

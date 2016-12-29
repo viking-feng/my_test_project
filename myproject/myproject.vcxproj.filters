@@ -29,5 +29,11 @@
     <ClInclude Include="myhead.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Sales_item.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="constructor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
