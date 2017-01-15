@@ -1,3 +1,2 @@
 ﻿  main.cpp
-  myproject.vcxproj -> D:\vsprojects\myproject\Debug\myproject.exe
-  myproject.vcxproj -> D:\vsprojects\myproject\Debug\myproject.pdb (Full PDB)
+d:\vsprojects\myproject\myproject\main.cpp(143): error C3863: 不可指定数组类型“char [7]”

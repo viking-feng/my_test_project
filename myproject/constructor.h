@@ -6,6 +6,7 @@ private:
 	int n1;
 	int n2;
 public:
+
 	A() : n2(n1 + 2), n1(2) {
 		std::cout << "construct without arguement" << std::endl;
 		myPrint();
@@ -36,6 +37,7 @@ public:
 	void myPrint() {
 		std::cout << "n1=" << n1 << "    n2=" << n2 << std::endl;
 	}
+
 };
 #endif // ! CONSTRATOR_TEST.H
 

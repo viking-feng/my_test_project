@@ -18,13 +18,13 @@
 #include"complex.h"
 //#include"myhead.h"
 using namespace std;
-extern int n;
+//extern int n;
  void myswap( int &a , int &b){
     a=a+b;
     b=a-b;
     a=a-b;
     cout<<a<<"  "<<b<<endl;
-    cout<<n<<endl;
+    //cout<<n<<endl;
 
 }
 int lengthOfLongestSubstring(string s) {
