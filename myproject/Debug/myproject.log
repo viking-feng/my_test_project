@@ -1,2 +1,4 @@
 ﻿  main.cpp
-d:\vsprojects\myproject\myproject\main.cpp(143): error C3863: 不可指定数组类型“char [7]”
+d:\vsprojects\myproject\myproject\main.cpp(88): warning C4172: 返回局部变量或临时变量的地址: a
+  myproject.vcxproj -> D:\vsprojects\myproject\Debug\myproject.exe
+  myproject.vcxproj -> D:\vsprojects\myproject\Debug\myproject.pdb (Full PDB)

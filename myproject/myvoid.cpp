@@ -27,6 +27,33 @@ using namespace std;
     //cout<<n<<endl;
 
 }
+
+ int checkCPU()     //sizeof(w) 是4；维护一片空间供所有成员共用。返回1是小端 返回0是大端
+ {
+	 {
+		 union w
+		 {
+			 int a;
+			 char b;
+		 } c;
+		 c.a = 1;
+		 cout << c.a << " " << c.b << endl;
+		 return (c.b == 1);
+	 }
+ }
+ int check_bigend_litend()
+ {
+	 unsigned int i = 0x12345678;
+	 cout << hex << i << endl;
+	 unsigned char *p = (unsigned char *)&i;          //将i的地址传给数组指针p，实际上p指向的地址是i在内存中存储的第一个字节，大端就是0x12，小端就是0x78
+	 if ((*p == 0x78)&(*(p + 1) == 0x56))
+		 cout << "小端" << endl;
+	 else if ((*p == 0x12)&(*(p + 1) == 0x34))
+		 cout << "大端" << endl;
+	 else
+		 cout << "这是神马字节顺序呢？";
+	 return 0;
+ }
 int lengthOfLongestSubstring(string s) {
           int n = s.length();
           int i = 0, j = 0;

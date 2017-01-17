@@ -109,7 +109,7 @@ A& A::operator++(int)
 //{
 //	return A(a1.data%a2.data);
 //}
- inline void Aprint( A &a) {
+ inline void Aprint( A &a) {                
 	cout << a.data << endl;
 
 }
@@ -125,21 +125,32 @@ A& A::operator++(int)
 
  int reused = 42;  // reused has global scope
 
+ char*getmemory(void)
+ {
+	 char *p = "hello word";
+	return p;
+ }
  int main()
  {
-	 string s = "abcdefg";
-	 int index = 0;
-	 
-	 while (index != s.size() && !isspace(s[index])) {
-		 s[index] = toupper(s[index]);
-		 index++;
-		
-	 
-	 }
-	 auto it = s.begin();
-	 cout << typeid(it).name() << endl;
-	 cout << s << endl;
-	 char a[] = "123456";
-	 cout << typeid(a).name() << endl;
 
+	// string s = "abcdefg";
+	// int index = 0;
+	// 
+	// while (index != s.size() && !isspace(s[index])) {
+	//	 s[index] = toupper(s[index]);
+	//	 index++;
+	// }
+	// auto it = s.begin();
+	// cout << typeid(it).name() << endl;
+	// cout << s << endl;
+	// char a[] = "123456";
+	// cout << typeid(a).name() << endl;
+	// int *p = &index;
+	// cout << p << endl;
+	// cout << (*p)++ << endl; 
+	// cout << p << endl;
+	 char *str = getmemory(); cout << str << endl;
  }
+
+
+ 

@@ -4,6 +4,8 @@
 
 extern void myswap(int &a ,int &b);
 extern int lengthOfLongestSubstring(string s);
+extern int checkCPU();
+extern int check_bigend_litend();
 namespace ABC {
 	void myprint(string &str) {
 		std::cout <<"ABC  "<< str << std::endl;
